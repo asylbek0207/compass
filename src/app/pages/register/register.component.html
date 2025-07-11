@@ -1,0 +1,36 @@
+<div class="register">
+  <h1 class="register-block__title">📝 Register</h1>
+  <form class="register-block__form" (ngSubmit)="onSubmit($event)" [formGroup]="form">
+    <h1 class="register-block__form--title">Nice to meet you</h1>
+    <label class="register-block__form--label">
+      First Name
+      <input formControlName="firstName" class="register-block__form--input" type="text">
+    </label>
+    <label class="register-block__form--label">
+      Last Name
+      <input formControlName="lastName" class="register-block__form--input" type="text">
+    </label>
+    <label class="register-block__form--label">
+      Username
+      <input formControlName="username" class="register-block__form--input" type="text">
+    </label>
+
+    <label class="register-block__form--label">
+      Email
+      <input formControlName="email" class="register-block__form--input" type="text">
+    </label>
+
+    <label class="register-block__form--label">
+      Password
+      <input formControlName="password" class="register-block__form--input" type="text">
+    </label>
+
+    <label class="register-block__form--label">
+      Age
+      <input formControlName="age" class="register-block__form--input" type="number">
+    </label>
+
+    <button class="register-block__form--btn" type="submit">💾 Save</button>
+  </form>
+</div>
+<router-outlet></router-outlet>

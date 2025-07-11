@@ -1,0 +1,24 @@
+
+<div class="logo">
+  <img class="bg-img" src="/assets/images/login-page-bg.png" alt="lighthouse and boat">
+</div>
+<div class="login-block">
+  <h1 class="login-block__title">🧭 Compass</h1>
+  <form class="login-block__form" (ngSubmit)="onSubmit($event)" [formGroup]="form">
+    <h1 class="login-block__form--title">Nice to see you again</h1>
+    <label class="login-block__form--label">
+      Username
+      <input formControlName="username" class="login-block__form--input" type="text">
+    </label>
+
+    <label class="login-block__form--label">
+      Password
+      <input formControlName="password" class="login-block__form--input" [type]="isPasswordVisible ? 'text' : 'password'">
+    </label>
+
+    <button class="login-block__form--btn" type="submit">🔓 Enter</button>
+  </form>
+
+  <div class="call-to-action">Don't have an account? <a routerLink="/register">Sign up now</a></div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/">🧭 Compass</a>
+  </div>
+
+  <ul class="navbar-links">
+    <li><a routerLink="/tasks" routerLinkActive="active">Tasks</a></li>
+    <li><a routerLink="/milestones" routerLinkActive="active">Milestones</a></li>
+    <li><a routerLink="/analytics" routerLinkActive="active">Analytics</a></li>
+  </ul>
+
+  <button class="navbar-button" (click)="logout()">
+    Logout 🏃🚪
+  </button>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+
